@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="737.0" prefWidth="1132.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.celal258.cagoz.controller.LoggingController">
+    <children>
+        <GridPane layoutX="-4.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-4.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="0.0">
+            <columnConstraints>
+                <ColumnConstraints />
+                <ColumnConstraints />
+                <ColumnConstraints />
+                <ColumnConstraints />
+                <ColumnConstraints />
+                <ColumnConstraints />
+                <ColumnConstraints />
+                <ColumnConstraints hgrow="NEVER" maxWidth="952.0" minWidth="10.0" prefWidth="28.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="952.0" minWidth="10.0" prefWidth="164.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="952.0" minWidth="10.0" prefWidth="199.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="952.0" minWidth="6.0" prefWidth="50.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="952.0" minWidth="10.0" prefWidth="198.40004882812497" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="952.0" minWidth="0.0" prefWidth="43.199951171875" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="952.0" minWidth="10.0" prefWidth="268.4" />
+                <ColumnConstraints hgrow="NEVER" maxWidth="885.0" minWidth="10.0" prefWidth="105.0" />
+                <ColumnConstraints hgrow="NEVER" maxWidth="885.0" minWidth="0.0" prefWidth="29.59999999999991" />
+                <ColumnConstraints maxWidth="29.59999999999991" minWidth="0.0" prefWidth="0.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="629.0" minHeight="10.0" prefHeight="414.5999816894531" vgrow="ALWAYS" />
+                <RowConstraints maxHeight="414.0" minHeight="8.000018310546864" prefHeight="43.199993896484386" vgrow="NEVER" />
+                <RowConstraints maxHeight="414.0" minHeight="10.0" prefHeight="68.0000061035156" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="414.0" minHeight="10.0" prefHeight="157.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="414.0" minHeight="5.0" prefHeight="39.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="414.0" minHeight="10.0" prefHeight="14.0" vgrow="NEVER" />
+            </rowConstraints>
+            <children>
+                <TableView fx:id="tableView" prefHeight="370.0" prefWidth="1132.0" GridPane.columnIndex="7" GridPane.columnSpan="9" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                    <columns>
+                        <TableColumn fx:id="id" prefWidth="75.0" text="Kayıt No" visible="false" />
+                        <TableColumn fx:id="userName" maxWidth="3000.0" prefWidth="75.0" text="Kullanıcı" />
+                        <TableColumn fx:id="projectType" prefWidth="75.0" text="Proje Tür" visible="false" />
+                        <TableColumn fx:id="loggingText" maxWidth="9000.0" prefWidth="75.0" text="Hareket" />
+                        <TableColumn fx:id="loggingDate" maxWidth="4000.0" prefWidth="75.0" text="Hareket Tarihi" />
+                        <TableColumn fx:id="projectId" maxWidth="1500.0" prefWidth="75.0" text="Proje Id" />
+                        <TableColumn fx:id="projectOrder" prefWidth="75.0" text="Ödeme" visible="false" />
+                    </columns>
+                    <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                    </columnResizePolicy>
+                </TableView>
+                <VBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.columnIndex="10" GridPane.columnSpan="4" GridPane.rowIndex="2" GridPane.rowSpan="3">
+                    <children>
+                        <GridPane alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="287.0" prefWidth="520.0" VBox.vgrow="NEVER">
+                            <columnConstraints>
+                                <ColumnConstraints maxWidth="288.0" minWidth="10.0" prefWidth="173.0" />
+                                <ColumnConstraints hgrow="NEVER" maxWidth="194.0" minWidth="10.0" prefWidth="30.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="382.0" minWidth="10.0" prefWidth="270.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints maxHeight="1.7976931348623157E308" minHeight="16.0" prefHeight="36.0" valignment="CENTER" vgrow="ALWAYS" />
+                                <RowConstraints maxHeight="1.7976931348623157E308" minHeight="16.0" prefHeight="36.0" valignment="CENTER" vgrow="ALWAYS" />
+                                <RowConstraints maxHeight="1.7976931348623157E308" minHeight="16.0" prefHeight="36.0" valignment="CENTER" vgrow="ALWAYS" />
+                                <RowConstraints maxHeight="1.7976931348623157E308" minHeight="12.0" prefHeight="41.0" valignment="CENTER" vgrow="ALWAYS" />
+                                <RowConstraints maxHeight="1.7976931348623157E308" minHeight="16.0" prefHeight="41.0" valignment="CENTER" vgrow="ALWAYS" />
+                                <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="43.0" valignment="CENTER" vgrow="ALWAYS" />
+                            </rowConstraints>
+                            <children>
+                                <VBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="43.0" prefWidth="592.0" GridPane.rowIndex="4">
+                                    <children>
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tarih Aralığı">
+                                            <font>
+                                                <Font size="20.0" />
+                                            </font>
+                                        </Text>
+                                    </children>
+                                </VBox>
+                                <VBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="43.0" prefWidth="592.0" GridPane.rowIndex="1">
+                                    <children>
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Hareket">
+                                            <font>
+                                                <Font size="20.0" />
+                                            </font>
+                                        </Text>
+                                    </children>
+                                </VBox>
+                                <VBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="43.0" prefWidth="592.0" GridPane.rowIndex="3">
+                                    <children>
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Kullanıcı">
+                                            <font>
+                                                <Font size="20.0" />
+                                            </font>
+                                        </Text>
+                                    </children>
+                                </VBox>
+                                <VBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="43.0" prefWidth="592.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                    <children>
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+                                            <font>
+                                                <Font size="20.0" />
+                                            </font>
+                                        </Text>
+                                    </children>
+                                </VBox>
+                                <VBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="43.0" prefWidth="592.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                    <children>
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+                                            <font>
+                                                <Font size="20.0" />
+                                            </font>
+                                        </Text>
+                                    </children>
+                                </VBox>
+                                <VBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="43.0" prefWidth="592.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                    <children>
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+                                            <font>
+                                                <Font size="20.0" />
+                                            </font>
+                                        </Text>
+                                    </children>
+                                </VBox>
+                                <VBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="43.0" prefWidth="592.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                    <children>
+                                        <TextField fx:id="searchTextField" />
+                                    </children>
+                                </VBox>
+                                <VBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="52.0" prefWidth="388.0" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                                    <children>
+                                        <DatePicker fx:id="datePickerReturn" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onKeyReleased="#datePickerReturnText" prefHeight="31.0" prefWidth="92.0" />
+                                    </children>
+                                </VBox>
+                                <VBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="43.0" prefWidth="592.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                                    <children>
+                                        <DatePicker fx:id="datePickerGoing" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onKeyReleased="#datePickerGoingText" prefHeight="31.0" prefWidth="117.0" />
+                                    </children>
+                                </VBox>
+                                <ComboBox fx:id="comboBox" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="28.0" prefWidth="299.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Filtre" textAlignment="CENTER" wrappingWidth="132.24042129516602" GridPane.columnSpan="3" GridPane.halignment="CENTER">
+                                    <font>
+                                        <Font name="System Bold" size="25.0" />
+                                    </font>
+                                    <GridPane.margin>
+                                        <Insets />
+                                    </GridPane.margin>
+                                </Text>
+                                <VBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="43.0" prefWidth="592.0" GridPane.rowIndex="2">
+                                    <children>
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Proje Id">
+                                            <font>
+                                                <Font size="20.0" />
+                                            </font>
+                                        </Text>
+                                    </children>
+                                </VBox>
+                                <TextField fx:id="searchProjectIdTextInput" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                <VBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="43.0" prefWidth="592.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                    <children>
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+                                            <font>
+                                                <Font size="20.0" />
+                                            </font>
+                                        </Text>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </GridPane>
+                    </children>
+                </VBox>
+            <VBox alignment="BOTTOM_LEFT" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="8" GridPane.rowIndex="4">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#backButtonAction" prefHeight="30.0" prefWidth="82.0" text="Geri" />
+               </children>
+            </VBox>
+                    <Button mnemonicParsing="false" onAction="#filteredClearButtonAction" prefHeight="40.0" prefWidth="120.0" text="Filtreleri Kaldır" GridPane.columnIndex="14" GridPane.columnSpan="3" GridPane.halignment="RIGHT" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+            </children>
+        </GridPane>
+    </children>
+</AnchorPane>

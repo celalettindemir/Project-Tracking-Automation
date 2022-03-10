@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="656.0" prefWidth="1163.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.celal258.cagoz.controller.NewProjectController">
+    <children>
+        <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="435.0" vgrow="ALWAYS" />
+            </rowConstraints>
+            <children>
+                <VBox prefHeight="372.0" prefWidth="1163.0">
+                    <children>
+                        <GridPane prefHeight="656.0" prefWidth="1110.0" VBox.vgrow="ALWAYS">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="NEVER" maxWidth="1.7976931348623157E308" minWidth="2.0" prefWidth="46.0" />
+                                <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="201.0" prefWidth="705.0" />
+                                <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="383.0" prefWidth="393.0" />
+                                <ColumnConstraints hgrow="NEVER" maxWidth="1.7976931348623157E308" minWidth="9.0" prefWidth="12.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints maxHeight="648.0" minHeight="10.0" prefHeight="11.0" vgrow="NEVER" />
+                                <RowConstraints maxHeight="1.7976931348623157E308" vgrow="ALWAYS" />
+                                <RowConstraints maxHeight="648.0" minHeight="10.0" prefHeight="37.0" vgrow="NEVER" />
+                                <RowConstraints maxHeight="322.0" minHeight="8.0" prefHeight="12.0" vgrow="NEVER" />
+                            </rowConstraints>
+                            <children>
+                                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                    <children>
+                                        <GridPane prefHeight="538.0" prefWidth="751.0">
+                                            <columnConstraints>
+                                                <ColumnConstraints hgrow="NEVER" maxWidth="221.0" minWidth="10.0" prefWidth="51.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="316.0" minWidth="10.0" prefWidth="229.0" />
+                                                <ColumnConstraints hgrow="NEVER" maxWidth="302.0" minWidth="0.0" prefWidth="51.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="380.0" minWidth="10.0" prefWidth="304.0" />
+                                                <ColumnConstraints hgrow="NEVER" maxWidth="79.0" minWidth="10.0" prefWidth="29.0" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                                <RowConstraints maxHeight="62.0" minHeight="10.0" prefHeight="70.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="82.0" minHeight="10.0" prefHeight="70.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="96.0" minHeight="10.0" prefHeight="70.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="107.0" minHeight="10.0" prefHeight="70.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="107.0" minHeight="10.0" prefHeight="70.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="128.0" minHeight="10.0" prefHeight="70.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="182.0" minHeight="10.0" prefHeight="115.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="118.0" minHeight="10.0" prefHeight="39.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="76.0" minHeight="7.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="34.0" minHeight="2.0" prefHeight="2.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                            <children>
+                                                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3">
+                                                    <children>
+                                                        <VBox prefHeight="200.0" prefWidth="100.0">
+                                                            <children>
+                                                                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                                                    <children>
+                                                                        <ComboBox fx:id="projectTypeComboBox" maxWidth="1.7976931348623157E308" prefWidth="150.0" />
+                                                                    </children>
+                                                                </VBox>
+                                                            </children>
+                                                        </VBox>
+                                                    </children>
+                                                </VBox>
+                                                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                                    <children>
+                                                        <ComboBox fx:id="customerNameComboBox" editable="true" maxWidth="1.7976931348623157E308" prefWidth="150.0" />
+                                                    </children>
+                                                </VBox>
+                                                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                                                    <children>
+                                                        <TextField fx:id="projectNameTextField" prefHeight="30.0" />
+                                                    </children>
+                                                </VBox>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                                       <children>
+                                          <TextField fx:id="adaParselTextField" prefHeight="30.0" />
+                                       </children>
+                                    </VBox>
+                                                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                                                    <children>
+                                                        <TextField fx:id="priceTextField" prefHeight="30.0" />
+                                                    </children>
+                                                </VBox>
+                                                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="5">
+                                                    <children>
+                                                        <TextField fx:id="receivedMoneyTextField" prefHeight="30.0" />
+                                                    </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="6">
+                                                    <children>
+                                                        <TextArea fx:id="noteTextField" prefHeight="200.0" prefWidth="200.0" />
+                                                    </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="7">
+                                                    <children>
+                                                        <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0">
+                                                            <children>
+                                                                <CheckBox fx:id="remindCheckBox" mnemonicParsing="false" onAction="#handleCheckBoxAction" />
+                                                            </children>
+                                                        </VBox>
+                                                    </children>
+                                                </VBox>
+                                                <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                                                    <children>
+                                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+                                                            <font>
+                                                                <Font size="27.0" />
+                                                            </font>
+                                                        </Text>
+                                                    </children>
+                                                </VBox>
+                                                <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                                    <children>
+                                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="İşin Adı">
+                                                            <font>
+                                                                <Font size="20.0" />
+                                                            </font>
+                                                        </Text>
+                                                    </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="7">
+                                                    <children>
+                                                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                                            <children>
+                                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+                                                                    <font>
+                                                                        <Font size="27.0" />
+                                                                    </font>
+                                                                </Text>
+                                                            </children>
+                                                        </VBox>
+                                                    </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                                                    <children>
+                                                        <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0">
+                                                            <children>
+                                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Hatırlatma">
+                                                                    <font>
+                                                                        <Font size="20.0" />
+                                                                    </font>
+                                                                </Text>
+                                                            </children>
+                                                        </VBox>
+                                                    </children>
+                                                </VBox>
+                                                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                                    <children>
+                                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+                                                            <font>
+                                                                <Font size="27.0" />
+                                                            </font>
+                                                        </Text>
+                                                    </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                                                    <children>
+                                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Not">
+                                                            <font>
+                                                                <Font size="20.0" />
+                                                            </font>
+                                                        </Text>
+                                                    </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2">
+                                                    <children>
+                                                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                                            <children>
+                                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+                                                                    <font>
+                                                                        <Font size="27.0" />
+                                                                    </font>
+                                                                </Text>
+                                                            </children>
+                                                        </VBox>
+                                                    </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+                                                    <children>
+                                                        <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0">
+                                                            <children>
+                                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="İşin Türü">
+                                                                    <font>
+                                                                        <Font size="20.0" />
+                                                                    </font>
+                                                                </Text>
+                                                            </children>
+                                                        </VBox>
+                                                    </children>
+                                                </VBox>
+                                                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                                    <children>
+                                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+                                                            <font>
+                                                                <Font size="27.0" />
+                                                            </font>
+                                                        </Text>
+                                                    </children>
+                                                </VBox>
+                                                <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                    <children>
+                                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Müşteri Adı">
+                                                            <font>
+                                                                <Font size="20.0" />
+                                                            </font>
+                                                        </Text>
+                                                    </children>
+                                                </VBox>
+                                                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                                                    <children>
+                                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+                                                            <font>
+                                                                <Font size="27.0" />
+                                                            </font>
+                                                        </Text>
+                                                    </children>
+                                                </VBox>
+                                                <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                                    <children>
+                                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ücret">
+                                                            <font>
+                                                                <Font size="20.0" />
+                                                            </font>
+                                                        </Text>
+                                                    </children>
+                                                </VBox>
+                                                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                                                    <children>
+                                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+                                                            <font>
+                                                                <Font size="27.0" />
+                                                            </font>
+                                                        </Text>
+                                                    </children>
+                                                </VBox>
+                                                <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                                    <children>
+                                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Alınan Miktar">
+                                                            <font>
+                                                                <Font size="20.0" />
+                                                            </font>
+                                                        </Text>
+                                                    </children>
+                                                </VBox>
+                                    <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ada Parsel">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+                                             <font>
+                                                <Font size="27.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </VBox>
+                                            </children>
+                                        </GridPane>
+                                    </children>
+                                </VBox>
+                                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                    <children>
+                                        <GridPane prefHeight="485.0" prefWidth="516.0">
+                                            <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="81.0" minWidth="10.0" prefWidth="31.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="146.0" minWidth="2.0" prefWidth="26.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="320.0" minWidth="10.0" prefWidth="308.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="108.0" minWidth="0.0" prefWidth="39.0" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                                <RowConstraints maxHeight="342.0" minHeight="10.0" prefHeight="69.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="342.0" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="342.0" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="342.0" minHeight="0.0" prefHeight="160.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="306.0" minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="150.0" minHeight="10.0" prefHeight="95.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="150.0" minHeight="10.0" prefHeight="19.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="150.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                            <children>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                                    <children>
+                                                        <GridPane gridLinesVisible="true" prefHeight="310.0" prefWidth="301.0">
+                                                            <columnConstraints>
+                                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                            </columnConstraints>
+                                                            <rowConstraints>
+                                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                            </rowConstraints>
+                                                            <children>
+                                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                                                    <children>
+                                                      <VBox layoutX="14.0" layoutY="6.0">
+                                                         <children>
+                                                                              <CheckBox fx:id="TapuCheckBox" mnemonicParsing="false" text="Tapu">
+                                                               <VBox.margin>
+                                                                  <Insets bottom="10.0" />
+                                                               </VBox.margin>
+                                                            </CheckBox>
+                                                                              <CheckBox fx:id="RuhsatCheckBox" mnemonicParsing="false" text="Ruhsat">
+                                                               <VBox.margin>
+                                                                  <Insets bottom="10.0" />
+                                                               </VBox.margin>
+                                                            </CheckBox>
+                                                                              <CheckBox fx:id="VekaletCheckBox" mnemonicParsing="false" text="Vekalet">
+                                                               <VBox.margin>
+                                                                  <Insets bottom="10.0" />
+                                                               </VBox.margin>
+                                                            </CheckBox>
+                                                                              <CheckBox fx:id="ImarAffiCheckBox" mnemonicParsing="false" text="İmar Affı">
+                                                               <VBox.margin>
+                                                                  <Insets bottom="10.0" />
+                                                               </VBox.margin>
+                                                            </CheckBox>
+                                                                              <CheckBox fx:id="BelediyeYazisiCheckBox" mnemonicParsing="false" text="Belediye Yazısı">
+                                                               <VBox.margin>
+                                                                  <Insets bottom="10.0" />
+                                                               </VBox.margin>
+                                                            </CheckBox>
+                                                         </children>
+                                                      </VBox>
+                                                                    </children>
+                                                                </AnchorPane>
+                                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" GridPane.columnIndex="1">
+                                                                    <children>
+                                                      <VBox layoutX="12.0" layoutY="8.0">
+                                                         <children>
+                                                                              <CheckBox fx:id="IlceTarimCheckBox" mnemonicParsing="false" text="İlçe Tarım">
+                                                               <VBox.margin>
+                                                                  <Insets bottom="10.0" />
+                                                               </VBox.margin>
+                                                            </CheckBox>
+                                                                              <CheckBox fx:id="DsiCheckBox" mnemonicParsing="false" text="DSİ">
+                                                               <VBox.margin>
+                                                                  <Insets bottom="10.0" />
+                                                               </VBox.margin>
+                                                            </CheckBox>
+                                                                              <CheckBox fx:id="MevcutFaturaCheckBox" mnemonicParsing="false" text="Mevcut Fatura">
+                                                               <VBox.margin>
+                                                                  <Insets bottom="10.0" />
+                                                               </VBox.margin>
+                                                            </CheckBox>
+                                                                              <CheckBox fx:id="EmlakBeyaniCheckBox" mnemonicParsing="false" text="Emlak Beyanı">
+                                                               <VBox.margin>
+                                                                  <Insets bottom="10.0" />
+                                                               </VBox.margin>
+                                                            </CheckBox>
+                                                         </children>
+                                                      </VBox>
+                                                                    </children>
+                                                                </AnchorPane>
+                                                            </children>
+                                                        </GridPane>
+                                                    </children>
+                                                </VBox>
+                                                <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                                    <children>
+                                                        <Label prefHeight="31.0" prefWidth="78.0" text="Belgeler">
+                                                            <font>
+                                                                <Font size="17.0" />
+                                                            </font></Label>
+                                                    </children>
+                                                </VBox>
+                                                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                                                    <children>
+                                                        <GridPane>
+                                                            <columnConstraints>
+                                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                            </columnConstraints>
+                                                            <rowConstraints>
+                                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                            </rowConstraints>
+                                                            <children>
+                                                                <VBox alignment="CENTER_RIGHT" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" />
+                                                                <VBox alignment="CENTER_RIGHT" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" />
+                                                                <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS" />
+                                                            </children>
+                                                        </GridPane>
+                                                    </children>
+                                                </VBox>
+                                                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER">
+                                       <children>
+                                          <HBox alignment="CENTER">
+                                             <children>
+                                                                  <Button mnemonicParsing="false" onAction="#browseButtonAction" prefHeight="31.0" prefWidth="78.0" text="Yükle">
+                                                   <HBox.margin>
+                                                      <Insets right="10.0" />
+                                                   </HBox.margin>
+                                                </Button>
+                                                                  <Button mnemonicParsing="false" onAction="#deleteDocumentButtonAction" prefHeight="31.0" prefWidth="78.0" text="Sil">
+                                                   <HBox.margin>
+                                                      <Insets right="10.0" />
+                                                   </HBox.margin>
+                                                </Button>
+                                                <Button mnemonicParsing="false" onAction="#deleteDocumentButtonAction" prefHeight="31.0" prefWidth="78.0" text="İndir" />
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                                </VBox>
+                                                <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                                    <columnConstraints>
+                                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="146.0" minWidth="10.0" prefWidth="129.0" />
+                                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="147.0" minWidth="10.0" prefWidth="124.0" />
+                                                    </columnConstraints>
+                                                    <rowConstraints>
+                                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                    </rowConstraints>
+                                                    <children>
+                                                        <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0">
+                                             <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Proje Çizim :" wrappingWidth="142.568359375">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                                        </VBox>
+                                                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+                                                            <children>
+                                                                <ComboBox fx:id="projectDrawComboBox" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="28.0" prefWidth="234.0" />
+                                                            </children>
+                                                        </VBox>
+                                                    </children>
+                                                </GridPane>
+                                    <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                                       <children>
+                                          <ListView fx:id="documentFileListView" prefHeight="200.0" prefWidth="200.0" />
+                                       </children>
+                                    </VBox>
+                                            </children>
+                                        </GridPane>
+                                    </children>
+                                </VBox>
+                                <VBox alignment="BOTTOM_LEFT" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                    <children>
+                                        <Button mnemonicParsing="false" onAction="#backButtonAction" prefHeight="31.0" prefWidth="78.0" text="Geri" />
+                                    </children>
+                                </VBox>
+                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="2">
+                                    <children>
+                                        <GridPane prefHeight="59.0" prefWidth="474.0">
+                                            <columnConstraints>
+                                                <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="150.0" prefWidth="150.0" />
+                                                <ColumnConstraints hgrow="NEVER" maxWidth="224.0" minWidth="10.0" prefWidth="131.0" />
+                                                <ColumnConstraints hgrow="NEVER" maxWidth="158.0" minWidth="10.0" prefWidth="127.0" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                            <children>
+                                                <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.halignment="RIGHT">
+                                                    <children>
+                                                        <Button mnemonicParsing="false" onAction="#newPaperButtonAction" prefHeight="31.0" prefWidth="115.0" text="İşlem Ekle" />
+                                                    </children>
+                                                </VBox>
+                                                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+                                                    <children>
+                                                        <Button mnemonicParsing="false" onAction="#saveButtonAction" prefHeight="31.0" prefWidth="78.0" text="Ekle" />
+                                                    </children>
+                                                </VBox>
+                                                <VBox alignment="CENTER_RIGHT" prefHeight="200.0" prefWidth="100.0" />
+                                            </children>
+                                        </GridPane>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </GridPane>
+                    </children>
+                </VBox>
+            </children>
+        </GridPane>
+    </children>
+</AnchorPane>
